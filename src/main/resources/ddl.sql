@@ -7,6 +7,15 @@ CREATE TABLE FILM
     UNIQUE (NAME)
 );
 
+CREATE TABLE student
+(
+    id   BIGSERIAL    NOT NULL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    mark FLOAT        NOT NULL
+);
+
+insert into student(name, mark)  values ('Ivan', 5.0);
+
 CREATE TABLE WEEKDAYS_PRICE
 (
     ID            BIGSERIAL NOT NULL PRIMARY KEY,
@@ -99,26 +108,47 @@ values ('film2', 150, 20.30);
 insert into schedule(film_name, price, start_time)
 values ('film3', 180, 21.00);
 
-insert into tickets(ticket_number, schedule_id) VALUES (7656567,1);
-insert into tickets(ticket_number, schedule_id) VALUES (3453672,2);
-insert into tickets(ticket_number, schedule_id) VALUES (324567876,3);
-insert into tickets(ticket_number, schedule_id) VALUES (1234687345,4);
-insert into tickets(ticket_number, schedule_id) VALUES (4534534134,5);
-insert into tickets(ticket_number, schedule_id) VALUES (7856779,6);
-insert into tickets(ticket_number, schedule_id) VALUES (75675678,7);
-insert into tickets(ticket_number, schedule_id) VALUES (78646,8);
-insert into tickets(ticket_number, schedule_id) VALUES (6875367,9);
-insert into tickets(ticket_number, schedule_id) VALUES (96796006,10);
-insert into tickets(ticket_number, schedule_id) VALUES (00875678,11);
-insert into tickets(ticket_number, schedule_id) VALUES (767590,12);
-insert into tickets(ticket_number, schedule_id) VALUES (56790,13);
-insert into tickets(ticket_number, schedule_id) VALUES (45689,14);
-insert into tickets(ticket_number, schedule_id) VALUES (546789,15);
-insert into tickets(ticket_number, schedule_id) VALUES (64534,16);
-insert into tickets(ticket_number, schedule_id) VALUES (467347,17);
-insert into tickets(ticket_number, schedule_id) VALUES (324672,18);
-insert into tickets(ticket_number, schedule_id) VALUES (21134347,19);
-insert into tickets(ticket_number, schedule_id) VALUES (453678,20);
-insert into tickets(ticket_number, schedule_id) VALUES (457894,21);
+insert into tickets(ticket_number, schedule_id)
+VALUES (7656567, 1);
+insert into tickets(ticket_number, schedule_id)
+VALUES (3453672, 2);
+insert into tickets(ticket_number, schedule_id)
+VALUES (324567876, 3);
+insert into tickets(ticket_number, schedule_id)
+VALUES (1234687345, 4);
+insert into tickets(ticket_number, schedule_id)
+VALUES (4534534134, 5);
+insert into tickets(ticket_number, schedule_id)
+VALUES (7856779, 6);
+insert into tickets(ticket_number, schedule_id)
+VALUES (75675678, 7);
+insert into tickets(ticket_number, schedule_id)
+VALUES (78646, 8);
+insert into tickets(ticket_number, schedule_id)
+VALUES (6875367, 9);
+insert into tickets(ticket_number, schedule_id)
+VALUES (96796006, 10);
+insert into tickets(ticket_number, schedule_id)
+VALUES (00875678, 11);
+insert into tickets(ticket_number, schedule_id)
+VALUES (767590, 12);
+insert into tickets(ticket_number, schedule_id)
+VALUES (56790, 13);
+insert into tickets(ticket_number, schedule_id)
+VALUES (45689, 14);
+insert into tickets(ticket_number, schedule_id)
+VALUES (546789, 15);
+insert into tickets(ticket_number, schedule_id)
+VALUES (64534, 16);
+insert into tickets(ticket_number, schedule_id)
+VALUES (467347, 17);
+insert into tickets(ticket_number, schedule_id)
+VALUES (324672, 18);
+insert into tickets(ticket_number, schedule_id)
+VALUES (21134347, 19);
+insert into tickets(ticket_number, schedule_id)
+VALUES (453678, 20);
+insert into tickets(ticket_number, schedule_id)
+VALUES (457894, 21);
 
 

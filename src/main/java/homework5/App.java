@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(HibernateConfig.class);
+       /* AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(HibernateConfig.class);
         StudentDao studentDao = context.getBean(StudentDao.class);
 
         for (int i = 0; i <= 1000; i++) {
@@ -22,6 +22,6 @@ public class App {
 
         System.out.println(studentDao.findById(1L));
         studentDao.deleteById(1L);
-        System.out.println(studentDao.findAll());
+        System.out.println(studentDao.findAll());*/
     }
 }

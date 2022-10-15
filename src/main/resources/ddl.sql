@@ -11,10 +11,10 @@ CREATE TABLE student
 (
     id   BIGSERIAL    NOT NULL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    mark FLOAT        NOT NULL
+    age FLOAT        NOT NULL
 );
 
-insert into student(name, mark)  values ('Ivan', 5.0);
+insert into student(name, age)  values ('Ivan', 18);
 
 CREATE TABLE WEEKDAYS_PRICE
 (
